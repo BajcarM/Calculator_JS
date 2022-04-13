@@ -1,0 +1,99 @@
+body {
+  background-color: #ccd6dd;
+  width: 250px;
+  font-size: 1em;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#calculator {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  background-color: #ffffff;
+  /* border: solid rgb(125, 125, 125); */
+  padding: 20px;
+  border-radius: 10px;
+  /* grid-template-areas:
+    "input"
+    "results"
+    "button button button button"
+    "button button button button"
+    "button button button button"
+    "button button button button"; */
+}
+
+#input-number,
+#results {
+  text-align: right;
+  color: #55acee;
+  font-size: 2em;
+  /* margin: 10px; */
+  min-height: 40px;
+  /* background-color: brown; */
+  grid-column: span 4;
+  /* grid-area: "input"; */
+  overflow-wrap: break-word;
+}
+
+#results {
+  text-align: left;
+}
+
+/* #results {
+  text-align: right;
+  background-color: brown;
+  grid-area: "results";
+} */
+
+button {
+  font-size: 1em;
+  font-weight: bold;
+  color: #55acee;
+  padding: 10px;
+  background-color: #e1e8ed;
+  border: none;
+  border-radius: 10px;
+  /* box-shadow: 10px; */
+  /* grid-area: "button"; */
+}
+
+button:hover {
+  background-color: #292f33;
+}
+
+button:active {
+  background-color: #66757f;
+}
+
+.operation-btn {
+  background-color: #66757f;
+  color: #ffffff;
+}
+
+.equal-btn,
+.clear-btn {
+  background-color: #55acee;
+  color: #292f33;
+}
+
+.equal-btn:hover,
+.clear-btn:hover {
+  background-color: #292f33;
+  color: #55acee;
+}
+
+.equal-btn:active,
+.clear-btn:active {
+  background-color: #66757f;
+}
+
+.clear-e-btn {
+  grid-column: span 2;
+}
+
+.add-btn {
+  grid-column: 4;
+  grid-row: 6 / 8;
+}
