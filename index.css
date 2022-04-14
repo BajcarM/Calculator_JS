@@ -12,16 +12,8 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   background-color: #ffffff;
-  /* border: solid rgb(125, 125, 125); */
   padding: 20px;
   border-radius: 10px;
-  /* grid-template-areas:
-    "input"
-    "results"
-    "button button button button"
-    "button button button button"
-    "button button button button"
-    "button button button button"; */
 }
 
 #input-number,
