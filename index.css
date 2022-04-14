@@ -33,12 +33,6 @@ body {
   text-align: left;
 }
 
-/* #results {
-  text-align: right;
-  background-color: brown;
-  grid-area: "results";
-} */
-
 button {
   font-size: 1em;
   font-weight: bold;
