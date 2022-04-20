@@ -12,27 +12,27 @@
       <div id="results"></div>
       <button
         class="operation-btn clear-btn clear-e-btn"
-        onclick="opeBtn('CE')"
+        onclick="Calculator.clearEverything()"
       >
         CE
       </button>
-      <button class="operation-btn clear-btn" onclick="opeBtn('C')">C</button>
-      <button class="operation-btn" onclick="opeBtn('÷')">÷</button>
-      <button class="number-btn" onclick="numBtn(7)">7</button>
-      <button class="number-btn" onclick="numBtn(8)">8</button>
-      <button class="number-btn" onclick="numBtn(9)">9</button>
-      <button class="operation-btn" onclick="opeBtn('×')">×</button>
-      <button class="number-btn" onclick="numBtn(4)">4</button>
-      <button class="number-btn" onclick="numBtn(5)">5</button>
-      <button class="number-btn" onclick="numBtn(6)">6</button>
-      <button class="operation-btn" onclick="opeBtn('-')">-</button>
-      <button class="number-btn" onclick="numBtn(1)">1</button>
-      <button class="number-btn" onclick="numBtn(2)">2</button>
-      <button class="number-btn" onclick="numBtn(3)">3</button>
-      <button class="operation-btn add-btn" onclick="opeBtn('+')">+</button>
-      <button class="operation-btn" onclick="opeBtn('decimal-point')">.</button>
-      <button class="number-btn" onclick="numBtn(0)">0</button>
-      <button class="operation-btn equal-btn" onclick="opeBtn('equal')">
+      <button class="operation-btn clear-btn" onclick="Calculator.clearInput()">C</button>
+      <button class="operation-btn" onclick="Calculator.operator('÷')">÷</button>
+      <button class="number-btn" onclick="Calculator.numBtn(7)">7</button>
+      <button class="number-btn" onclick="Calculator.numBtn(8)">8</button>
+      <button class="number-btn" onclick="Calculator.numBtn(9)">9</button>
+      <button class="operation-btn" onclick="Calculator.operator('×')">×</button>
+      <button class="number-btn" onclick="Calculator.numBtn(4)">4</button>
+      <button class="number-btn" onclick="Calculator.numBtn(5)">5</button>
+      <button class="number-btn" onclick="Calculator.numBtn(6)">6</button>
+      <button class="operation-btn" onclick="Calculator.operator('-')">-</button>
+      <button class="number-btn" onclick="Calculator.numBtn(1)">1</button>
+      <button class="number-btn" onclick="Calculator.numBtn(2)">2</button>
+      <button class="number-btn" onclick="Calculator.numBtn(3)">3</button>
+      <button class="operation-btn add-btn" onclick="Calculator.operator('+')">+</button>
+      <button class="operation-btn" onclick="Calculator.handlerDecimalPoint()">.</button>
+      <button class="number-btn" onclick="Calculator.numBtn(0)">0</button>
+      <button class="operation-btn equal-btn" onclick="Calculator.equals()">
         =
       </button>
     </div>
